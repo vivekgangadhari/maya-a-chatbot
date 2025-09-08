@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAYA</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded" rel="stylesheet"/>
+    <link rel="stylesheet" href="viv.css">
+</head>
+<body>
+    <button id="chatbot-toggler">
+        <span class="material-symbols-rounded">mode_comment</span>
+        <span class="material-symbols-rounded">close</span>
+    </button>
+    <div class="chatbot-popup">
+        <div class="chat-header">
+            <div class="header-info">
+                <svg class="chatbot-logo" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 1024 1024" fill="currentColor">
+                    <path d="M512 64C282.77 64 96 250.77 96 480c0 160.64 94.58 299.05 231.44 362.52L288 960l96-32 64 64 64-64 96 32-39.44-117.48C833.42 779.05 928 640.64 928 480c0-229.23-186.77-416-416-416zm0 768c-194.46 0-352-157.54-352-352S317.54 128 512 128s352 157.54 352 352-157.54 352-352 352zm0-512c-88.22 0-160 71.78-160 160s71.78 160 160 160 160-71.78 160-160-71.78-160-160-160z"/>
+                  </svg>
+                <h2 class="logo-text">chatbot</h2>
+            </div>
+            <button id="close-chatbot"
+             class="material-symbols-rounded">
+                keyboard_arrow_down
+            </button>
+        </div>
+        <div class="chat-body">
+            <div class="message bot-message">
+                <svg  class = "bot-avatar" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 1024 1024" fill="currentColor">
+                    <path d="M512 64C282.77 64 96 250.77 96 480c0 160.64 94.58 299.05 231.44 362.52L288 960l96-32 64 64 64-64 96 32-39.44-117.48C833.42 779.05 928 640.64 928 480c0-229.23-186.77-416-416-416zm0 768c-194.46 0-352-157.54-352-352S317.54 128 512 128s352 157.54 352 352-157.54 352-352 352zm0-512c-88.22 0-160 71.78-160 160s71.78 160 160 160 160-71.78 160-160-71.78-160-160-160z"/>
+                  </svg>
+                <div class="message-text">hai <br/>how can i help you mama?
+                </div>
+            </div>
+        </div>
+        <div class="chat-footer">
+            <form action="#" class="chat-form">
+                <textarea placeholder="message..." class="message-input" required></textarea>
+           <div class="chat-controls">
+            <button type="button" id="emoji-picker"
+            class="material-symbols-rounded">sentiment_satisfied </button>
+            <div class="file-upload-wrapper">
+                <input type="file" accept="images/*" id="file-input" hidden>
+                <img src="#">
+     
+                <button type="button" id="file-upload" class="material-symbols-rounded">attach_file</button>
+                <button type="button" id="file-cancel" class="material-symbols-rounded">closee</button>
+
+            </div>
+
+            <button type="submit" id="send-message" class="material-symbols-rounded">arrow_upward </button>
+
+           </div>
+            </form>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/emoji-mart@latest/dist/browser.js"></script>
+    <script src="newai.js"></script>
+</body>
+</html>
